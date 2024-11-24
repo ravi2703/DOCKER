@@ -4,7 +4,7 @@ pipeline {
       stage('build docker image') {
         steps {
 	  sh 'docker images'
-	  sh 'git branch: 'main', url:'https://github.com/ravi2703/DOCKER.git'
+	  sh 'git branch: 'master', url:'https://github.com/ravi2703/DOCKER.git'
 	}
 	stage('docker') {
 	  steps {
